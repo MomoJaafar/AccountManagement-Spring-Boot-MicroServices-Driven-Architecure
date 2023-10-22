@@ -1,0 +1,15 @@
+## Maven Command to run Spring Boot Service Instance with parsing arguments for the instance ID. {ja3}
+
+mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id=ja3
+
+## Run with arguments and Defined Server Port : 
+
+mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id=ja3_2,--server.port=8999
+
+
+Commands : 
+
+Run Eureka Service "Photo App Discovery Service"
+Run API Gateway
+Run Instances of Microservices Registered As Eureka Clients.
+Load Balancer "Spring Cloud" will ensure routing requests between the diffrence instances " Load Balancing".
